@@ -26,14 +26,16 @@
 
 ```shell
 git clone https://github.com/zhangxinhui02/Course-Selection-Script.git
-cd Course-Selection-Script
+cd Course-Selection-Script/Src
 python -m pip install -r requirements.txt
+cd config
 ```
 
-按自己的需求修改`Course-Selection-Script/config`目录下的`config.yaml`文件。
+按自己的需求修改`Course-Selection-Script/Src/config`目录下的`config.yaml`文件。
 
 ```shell
-# 回到Course-Selection-Script目录
+cd ..
+# 回到Course-Selection-Script/Src目录
 python main.py
 ```
 
