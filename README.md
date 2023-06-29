@@ -90,4 +90,4 @@ docker run -v .:/app/config zhangxinhui02/course-selection-script:latest
 
 可能存在未发现的bug，校方接口可能发生变动，由此可能导致无法自动选课，故请不要过于依赖本脚本，出现任何选课失误作者概不负责。
 
-开源协议：[MIT License](https://github.com/zhangxinhui02/Course-Selection-Script/blob/master/LICENSE)
+开源协议：[MIT License](https://github.com/zhangxinhui02/Course-Selection-Script/blob/main/LICENSE)
