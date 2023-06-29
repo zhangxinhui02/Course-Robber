@@ -46,8 +46,8 @@ python main.py
 进入此文件夹，新建`config.yaml`文件夹。将[示例配置文件](https://github.com/zhangxinhui02/Course-Selection-Script/blob/main/Src/config/config.yaml)的内容复制到此文件中并按需修改。
 
 ```shell
-# 回到Volume-CourseSelectionScript目录
-docker run -v .:/app/config zhangxinhui02/course-selection-script:latest
+# 回到Volume-CourseSelectionScript的上级目录
+docker run -v Volume-CourseSelectionScript:/app/config zhangxinhui02/course-selection-script:latest
 ```
 
 ## 注意事项
