@@ -43,7 +43,7 @@ python main.py
 
 新建一个空文件夹`Volume-CourseSelectionScript`用于存储配置文件并挂载到容器。
 
-进入此文件夹，新建`config.yaml`文件夹。将[示例配置文件](https://github.com/zhangxinhui02/Course-Selection-Script/blob/main/Src/config/config.yaml)的内容复制到此文件中并按需修改。
+进入此文件夹，新建`config.yaml`文件。将[示例配置文件](https://github.com/zhangxinhui02/Course-Selection-Script/blob/main/Src/config/config.yaml)的内容复制到此文件中并按需修改。
 
 ```shell
 # 回到Volume-CourseSelectionScript的上级目录
