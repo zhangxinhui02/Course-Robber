@@ -72,7 +72,7 @@ class Job:
         # 按老师筛选课程列表
         print('按老师筛选课程列表……')
         is_set = False  # 标识是否有筛选操作
-        for k, v in self.required_course_teacher:
+        for k, v in self.required_course_teacher.items():
             teachers = v.split()
             if len(teachers) != 0:
                 is_set = True

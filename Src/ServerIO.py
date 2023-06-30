@@ -32,8 +32,12 @@ def get_course_list(server: int, cookies: str, course_type: list) -> list:
             raise Exception(response.json()['info'])
 
         courses = response.json()['data']
-        for k, v in courses:
-            course_list.append(v)
+        if i == 'cx':   # 重修返回的是列表，需要特别处理
+            for course in courses:
+                course_list.append(course)
+        else:
+            for course in courses.values():
+                course_list.append(course)
     return course_list
 
 
