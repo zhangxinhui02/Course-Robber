@@ -1,4 +1,4 @@
-# 选课脚本
+# 选课脚本 / Course Robber
 
 适用于某重庆门大学选课系统的选课脚本，可配置较复杂的选课条件，助你选到心仪的课程。
 
@@ -27,36 +27,36 @@
 首先保证你的操作系统上安装了Python3和Git。
 
 ```shell
-git clone https://github.com/zhangxinhui02/Course-Selection-Script.git
-cd Course-Selection-Script/Src
+git clone https://github.com/zhangxinhui02/Course-Robber.git
+cd Course-Robber/Src
 python -m pip install -r requirements.txt
 cd config
 ```
 
-按自己的需求修改`Course-Selection-Script/Src/config`目录下的`config.yaml`文件。
+按自己的需求修改`Course-Robber/Src/config`目录下的`config.yaml`文件。
 
 ```shell
 cd ..
-# 回到Course-Selection-Script/Src目录
+# 回到Course-Robber/Src目录
 python main.py
 ```
 
 ### Docker部署
 
-新建一个空文件夹`Volume-CourseSelectionScript`用于存储配置文件并挂载到容器。
+新建一个空文件夹`Volume-CourseRobber`用于存储配置文件并挂载到容器。
 
 进入此文件夹，新建`config.yaml`文件。将[示例配置文件](https://github.com/zhangxinhui02/Course-Selection-Script/blob/main/Src/config/config.yaml)的内容复制到此文件中并按需修改。
 
 ```shell
-# 回到Volume-CourseSelectionScript的上级目录
-docker run -v Volume-CourseSelectionScript:/app/config zhangxinhui02/course-selection-script:latest
+# 回到Volume-CourseRobber的上级目录
+docker run -v Volume-CourseRobber:/app/config zhangxinhui02/course-robber:latest
 ```
 
 ## 注意事项
 
 - Cookies不要泄露给别人。
 
-- 选课信息采用dict类型存储。
+- 选课信息采用`dict`类型存储。
 
   键名为要选的课程的完整名称，对应的字符串值指定了如何选择老师。
 
