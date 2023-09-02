@@ -7,6 +7,7 @@ if __name__ == '__main__':
         config = yaml.safe_load(f)
     job = Job(config['required_course_teacher'],
               config['required_course_type'],
+              config['required_pe_course'],
               config['cookies'],
               config['server'],
               config['prefer_sleep_range'],

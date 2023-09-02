@@ -1,9 +1,9 @@
 # 此配置文件示例用于快速配置选课参数
 
 # 浏览器登录后抓包或从浏览器开发者模式获取你的cookies
-cookies: PHPSESSID=ST-xxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxlocalhost
+cookies: PHPSESSID=ST-xxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-# 指定要选择的课程和老师（可选，用空格分隔多位老师）
+# 指定要选择的非体育课程和老师，这里留空则不选非体育课程（可选，用空格分隔多位老师）（体育分项请勿在这里填写）
 required_course_teacher:
   # 指定课程而不指定老师，会选择此课程中的第一位老师的课程
   艺术设计作品赏析: ''
@@ -13,15 +13,21 @@ required_course_teacher:
   形势与政策: '*张三 *李四'
 
 # 要选择的课程类型，不填写就不会扫描并提交这个分类的课程，多填写也不会有影响，可以不用改
-# 分别对应：专业必修课、交叉通识课（人文社科）、交叉通识课（自然科学）、重修
+# 分别对应：专业必修课、交叉通识课（人文社科）、交叉通识课（自然科学）、重修（体育分项请勿在这里填写）
 required_course_type:
 - bj
 - rxrw
 - rxzr
 - cx
 
+# 要选择的体育课分项，这里留空则不选体育课程
+# 填写方法同required_course_teacher，不过体育课只能选一个
+required_pe_course:
+  中华射艺: '张三'
+
+
 # 指定选课服务器，即xk1和xk2，对应填写1或2
-server: 2
+server: 1
 
 # 优先选课和预选课时两次请求间的时间间隔(s)范围，在区间内随机取值，推荐填小一点
 prefer_sleep_range:
